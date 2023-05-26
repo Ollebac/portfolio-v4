@@ -1,1 +1,25 @@
+@use './variables' as var;
 @use '_base';
+
+.page_container {
+  position: relative;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.angled_background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: var.$bg_dark_blue;
+  z-index: -1;
+  clip-path: polygon(100% 100px, 100% 70%, 0 95%, 0% 25%);
+}
+
+@media screen and (min-width: 1100px) {
+  .angled_background {
+    clip-path: polygon(100% 100px, 100% 60%, 0 95%, 0% 35%);
+  }
+}

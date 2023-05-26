@@ -8,13 +8,16 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <main className='main_content'>
-      <Navbar />
-      <Header />
-      <Projects />
-      <About />
-      <Contact />
-    </main>
+    <div className='page_container'>
+      <main className='main_content'>
+        <Navbar />
+        <Header />
+        <Projects />
+        <About />
+        <Contact />
+      </main>
+      <div className='angled_background'></div>
+    </div>
   );
 }
 

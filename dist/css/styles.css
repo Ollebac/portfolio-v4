@@ -5,7 +5,7 @@ body {
 .main_content {
   max-width: 1500px;
   margin: auto;
-  padding: 10px clamp(10px, 5vw, 50px);
+  padding: 20px clamp(10px, 5vw, 50px);
   box-sizing: border-box;
 }
 
@@ -19,4 +19,29 @@ body {
 
 ul {
   list-style: none;
+}
+
+.page_container {
+  position: relative;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.angled_background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: #131a24;
+  z-index: -1;
+  -webkit-clip-path: polygon(100% 100px, 100% 70%, 0 95%, 0% 25%);
+          clip-path: polygon(100% 100px, 100% 70%, 0 95%, 0% 25%);
+}
+
+@media screen and (min-width: 1100px) {
+  .angled_background {
+    -webkit-clip-path: polygon(100% 100px, 100% 60%, 0 95%, 0% 35%);
+            clip-path: polygon(100% 100px, 100% 60%, 0 95%, 0% 35%);
+  }
 }/*# sourceMappingURL=styles.css.map */
