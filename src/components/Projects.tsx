@@ -24,7 +24,7 @@ const projectArray: Array<ProjectObject> = [
     projectDesc:
       'Using a full page design from Dribbble, I implemented the design with fully functioning components including a contact form with scheduling and pricing.',
     projectGit: 'https://github.com/Ollebac/equestrian-landing-page',
-    projectWeb: 'https://ollebac.dev/equestrian',
+    projectWeb: '',
   },
   {
     projectName: 'Portfolio v3',
@@ -32,7 +32,7 @@ const projectArray: Array<ProjectObject> = [
     projectDesc:
       'My third iteration of my personal website built with Next.js, Javascript, and CSS, hosted on Vercel. I personally designed and styled this site in Figma after researching UI design through articles, videos, and observation. I Project details in short description and such.',
     projectGit: 'https://github.com/Ollebac/portfolio-v4',
-    projectWeb: 'https://ollebac.dev',
+    projectWeb: '',
   },
   {
     projectName: 'Elder Drake',
@@ -70,12 +70,12 @@ const Project: FC<{ project: ProjectObject; activeProject: number; index: number
       <p className='project_description'>{project.projectDesc}</p>
       <div className='project_links_container'>
         {project.projectGit && (
-          <a href={project.projectGit}>
+          <a href={project.projectGit} target='blank'>
             <img src='images/github_logo.png' alt='Github Link' className='project_link' height={50} width={50} />
           </a>
         )}
         {project.projectWeb && (
-          <a href={project.projectWeb}>
+          <a href={project.projectWeb} target='blank'>
             <img src='images/web_logo.png' alt='Web Link' className='project_link' height={50} width={50} />
           </a>
         )}
