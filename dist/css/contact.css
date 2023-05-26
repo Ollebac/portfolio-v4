@@ -48,7 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 0 15px 15px 0;
   align-items: flex-start;
   background-color: #222a36;
   width: 100%;
