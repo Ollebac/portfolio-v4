@@ -78,6 +78,7 @@
 .form_button {
   @include button($bg: var.$bg_purple);
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .recaptcha {

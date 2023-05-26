@@ -30,6 +30,8 @@ const Contact = () => {
         console.log(error.text);
       }
     );
+
+    alert('You have successfully submitted this form. Please check your inbox for a confirmation email.');
     resetForm();
   };
 
