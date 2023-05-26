@@ -3,7 +3,7 @@
 
 .projects_section_container {
   @include flex($direction: column-reverse);
-  margin: 50px 0;
+  @include section_spacer_mobile();
 }
 
 .project_left_outer_container {
@@ -78,23 +78,13 @@
 }
 
 .project_right_container {
-  @include flex($direction: column);
-  // max-width: 400px;
-  margin-bottom: 60px;
-  padding: 10px;
+  @include section_content_mobile;
+  margin-top: 50px;
 }
 
 .section_title {
-  @include font($size: var.$section_header);
-  margin-bottom: 40px;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-  padding: 20px 40px;
+  @include section_header_mobile();
 }
-
-// .project_section_overview_container {
-//   @include flex();
-// }
 
 .project_section_overview {
   @include font($size: var.$general_text);
@@ -104,8 +94,7 @@
 
 @media screen and (min-width: 800px) {
   .project_section_overview_container {
-    @include flex();
-    align-items: flex-start;
+    @include section_content_desktop();
   }
 
   .project_section_overview:nth-child(1) {
@@ -115,6 +104,7 @@
 
 @media screen and (min-width: 1100px) {
   .projects_section_container {
+    @include section_spacer_desktop;
     display: grid;
     grid-template-columns: 500px 425px;
     grid-template-rows: 1fr;
@@ -129,10 +119,7 @@
   }
 
   .section_title {
-    border: none;
-    align-self: flex-start;
-    padding-left: 0;
-    margin: 0;
+    @include section_header_desktop();
   }
 
   .project_section_overview_container {

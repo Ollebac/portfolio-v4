@@ -45,6 +45,40 @@
   padding: 30px 20px;
 }
 
-@mixin vertical_space($margin: 10px) {
+@mixin vertical_space($margin: 15px) {
   margin: $margin 0;
+}
+
+@mixin section_header_mobile() {
+  @include font($size: var.$section_header);
+  margin-bottom: 40px;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 20px 40px;
+}
+
+@mixin section_header_desktop() {
+  border: none;
+  align-self: flex-start;
+  padding-left: 0;
+  margin: 0;
+}
+
+@mixin section_content_mobile() {
+  @include flex($direction: column);
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+@mixin section_content_desktop() {
+  @include flex();
+  align-items: flex-start;
+}
+
+@mixin section_spacer_mobile() {
+  margin: 75px 0;
+}
+
+@mixin section_spacer_desktop() {
+  margin: 150px 0;
 }
