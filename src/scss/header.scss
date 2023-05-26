@@ -30,6 +30,12 @@
 .header_button {
   @include button();
   @include vertical_space;
+  @include reduce();
+  cursor: pointer;
+
+  &:hover {
+    @include enlarge();
+  }
 }
 
 .header_images {

@@ -12,7 +12,12 @@
 }
 
 .nav_item {
+  @include reduce();
   padding: 5px;
+
+  &:hover {
+    @include enlarge();
+  }
 }
 
 @media screen and (min-width: 750px) {

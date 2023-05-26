@@ -12,7 +12,9 @@ const Header = () => {
           Front-End Web <br />
           Developer
         </h2>
-        <button className='header_button'>SEE MY WORK &#9816;</button>
+        <a href='#contact'>
+          <button className='header_button'>SEE MY WORK &#9816;</button>
+        </a>
       </header>
       <div className='header_images'>
         <div className='header_img_bg header_img_bg1'>

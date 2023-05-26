@@ -32,8 +32,12 @@
 @mixin enlarge() {
   &:hover {
     transform: scale(1.2);
-    transition-duration: 2s;
+    transition-duration: 0.5s;
   }
+}
+
+@mixin reduce() {
+  transition-duration: 0.5s;
 }
 
 @mixin flex($direction: row) {

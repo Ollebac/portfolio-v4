@@ -3,9 +3,7 @@ import '../scss/nav.scss';
 const Navbar = () => {
   return (
     <nav className='nav_container'>
-      <a href='mailto:me@ollebac.dev' className='email'>
-        ME@OLLEBAC.DEV
-      </a>
+      <a href='mailto:me@ollebac.dev' className='email'></a>
       <ul className='nav_items_container'>
         <li className='nav_item'>
           <a href='#projects'>PROJECTS</a>
