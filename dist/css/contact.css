@@ -10,6 +10,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
   overflow: hidden;
 }
 
@@ -37,7 +39,8 @@
   font-size: 16px;
   color: white;
   line-height: 1.1;
-  max-width: 450px;
+  line-height: 1.4;
+  max-width: 400px;
 }
 
 .contact_form {
@@ -107,10 +110,13 @@
 @media screen and (min-width: 800px) {
   .contact_form_container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: clamp(300px, 30vw, 350px) 1fr;
     grid-template-rows: 1fr;
     width: 100%;
     max-width: 1200px;
+  }
+  .contact_description {
+    max-width: 260px;
   }
   .contact_form_left {
     height: 100%;
@@ -118,5 +124,8 @@
   }
   .contact_form {
     padding: 40px clamp(30px, 5vw, 70px);
+  }
+  .contact_line_break {
+    margin: 40px 0;
   }
 }/*# sourceMappingURL=contact.css.map */
