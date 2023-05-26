@@ -106,10 +106,20 @@ const Projects = () => {
       </div>
       <div className='project_right_container'>
         <h2 className='section_title'>PROJECTS</h2>
-        <p className='project_section_overview'>
-          This will be a paragraph or two about my time developing, what got me into code, and what I find fun. What I
-          seek out in each project.
-        </p>
+        <div className='project_section_overview_container'>
+          <p className='project_section_overview'>
+            My journey into development began with a deep fascination for problem-solving and a genuine passion for
+            building things. From a young age, I found joy in unraveling complex puzzles and devising creative
+            solutions. As I grew older, my interests naturally gravitated towards the world of technology and software
+            development. The ability to create something tangible and functional from scratch captivated me.
+          </p>
+          <p className='project_section_overview'>
+            When I delve into a new project, I embrace the opportunity to blend old concepts with fresh ideas.
+            Incorporating familiar concepts allows me to solidify my existing knowledge and build upon a strong
+            foundation. Simultaneously, I strive to introduce at least one new concept to every project, pushing the
+            boundaries of my expertise and embracing the thrill of exploration.
+          </p>
+        </div>
       </div>
     </div>
   );
