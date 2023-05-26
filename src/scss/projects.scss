@@ -1,0 +1,122 @@
+@use './variables' as var;
+@import './mixins.scss';
+
+.projects_section_container {
+  @include flex($direction: column-reverse);
+  margin: 50px 0;
+}
+
+.project_left_outer_container {
+  display: grid;
+  grid-template-rows: 400px 50px;
+  max-width: 500px;
+  background-color: var.$bg_aqua;
+  padding: clamp(30px, 5vw, 40px) clamp(15px, 4vw, 28px);
+  @include round_border();
+}
+
+.project_left_inner_container {
+  @include flex($direction: column);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.inactive {
+  display: none;
+}
+
+.project_title {
+  @include font($color: var.$bg_dark_blue, $size: var.$section_header);
+  @include vertical_space();
+}
+
+.lang_container {
+  @include flex();
+  @include vertical_space();
+}
+
+.lang_text_container {
+  @include button($bg: var.$bg_dark_blue_opacity);
+  @include font($size: var.$small_text);
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.project_description {
+  @include font($size: var.$small_text, $color: var.$bg_dark_blue);
+  @include vertical_space();
+  line-height: 1.5;
+}
+
+.project_links_container {
+  @include vertical_space();
+}
+
+.project_link {
+  margin: 0 10px;
+  filter: invert(1);
+}
+
+.project_selector_container {
+  @include flex();
+  margin: 30px auto 0;
+}
+
+.project_selector {
+  line-height: 1px;
+  padding: 8px 8px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: var.$bg_purple;
+  cursor: pointer;
+}
+
+.active_project_selector {
+  background-color: white;
+  opacity: 80%;
+  transform: scale(1.3);
+}
+
+.project_right_container {
+  @include flex($direction: column);
+  max-width: 400px;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+.section_title {
+  @include font($size: var.$section_header);
+  margin-bottom: 40px;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 20px 40px;
+}
+
+.project_section_overview {
+  @include font($size: var.$general_text);
+  @include vertical_space();
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 750px) {
+  .projects_section_container {
+    display: grid;
+    grid-template-columns: 500px 425px;
+    grid-template-rows: 1fr;
+    grid-gap: 75px;
+  }
+
+  .project_right_container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    margin: 0;
+  }
+
+  .section_title {
+    border: none;
+    align-self: flex-start;
+    padding-left: 0;
+    margin: 0;
+  }
+}

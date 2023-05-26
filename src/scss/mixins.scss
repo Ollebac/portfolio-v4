@@ -1,0 +1,50 @@
+@use './variables' as var;
+
+@mixin header_img($color: var.$bg_purple) {
+  background-color: $color;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@mixin font($size: var.$general_text, $color: white) {
+  font-size: $size;
+  color: $color;
+  line-height: 1.1;
+}
+
+@mixin button($bg: var.$bg_aqua) {
+  background-color: $bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin round_border() {
+  border-radius: 15px;
+}
+
+@mixin enlarge() {
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: 2s;
+  }
+}
+
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin std_padding() {
+  padding: 30px 20px;
+}
+
+@mixin vertical_space($margin: 10px) {
+  margin: $margin 0;
+}
