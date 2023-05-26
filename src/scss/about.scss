@@ -26,8 +26,12 @@
     @include section_content_desktop();
   }
 
+  .about_content {
+    width: 50%;
+  }
+
   .about_content:nth-child(1) {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 
@@ -49,5 +53,9 @@
 
   .about_content_inner_container {
     flex-direction: column;
+  }
+
+  .about_content {
+    width: 100%;
   }
 }

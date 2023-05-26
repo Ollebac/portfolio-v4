@@ -97,8 +97,12 @@
     @include section_content_desktop();
   }
 
+  .project_section_overview {
+    width: 50%;
+  }
+
   .project_section_overview:nth-child(1) {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 
@@ -124,6 +128,10 @@
 
   .project_section_overview_container {
     flex-direction: column;
+  }
+
+  .project_section_overview {
+    width: 100%;
   }
 
   .project_section_overview:nth-child(1) {
