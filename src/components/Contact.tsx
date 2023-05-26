@@ -93,7 +93,7 @@ const Contact = () => {
               onChange={(e) => setContactMessage(e.target.value)}
             />
           </div>
-          <ReCAPTCHA sitekey='6LfkyzgmAAAAAJ6dLJQ8rafZwOlmqmbPnlQdvKoF' />
+          <ReCAPTCHA sitekey='6LfkyzgmAAAAAJ6dLJQ8rafZwOlmqmbPnlQdvKoF' className='recaptcha' />
           <button className='form_button' type='submit' value='Send'>
             Submit!
           </button>
