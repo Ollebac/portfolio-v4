@@ -41,7 +41,7 @@
 
 .contact_form {
   @include flex($direction: column);
-  @include round_border();
+  border-radius: 0 15px 15px 0;
   align-items: flex-start;
   background-color: var.$bg_light_blue;
   width: 100%;
