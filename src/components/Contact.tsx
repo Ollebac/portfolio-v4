@@ -2,6 +2,8 @@ import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 
+import '../scss/contact.scss';
+
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
@@ -35,8 +37,8 @@ const Contact = () => {
     <div className='contact_section_container'>
       <div className='contact_form_container'>
         <div className='contact_form_left'>
-          <h3 className='section_title'>CONTACT ME</h3>
-          <span className='contact_line_break'></span>
+          <h3 className='form_title'>Contact Me</h3>
+          <div className='contact_line_break'></div>
           <p className='contact_description'>
             Whether its about my work or future opportunities, the best way to get in touch with me starts with an
             email!
@@ -84,6 +86,7 @@ const Contact = () => {
             <label className='contact_label'>Message</label>
             <textarea
               name='message'
+              className='contact_form_input'
               placeholder='Tell me what you have to say!'
               required={true}
               value={contactMessage}
@@ -91,7 +94,7 @@ const Contact = () => {
             />
           </div>
           <ReCAPTCHA sitekey='6LfkyzgmAAAAAJ6dLJQ8rafZwOlmqmbPnlQdvKoF' />
-          <button type='submit' value='Send'>
+          <button className='form_button' type='submit' value='Send'>
             Submit!
           </button>
         </form>

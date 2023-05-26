@@ -18,28 +18,35 @@
 }
 
 .header_name {
-  font-size: clamp(50px, 8vw, 96px);
+  font-size: clamp(55px, 8vw, 96px);
   color: white;
   line-height: 1.1;
-  margin: 10px 0;
+  margin: 15px 0;
+  text-align: center;
 }
 
 .header_subtext {
-  font-size: clamp(20px, 3vw, 26px);
+  font-size: clamp(30px, 3vw, 26px);
   color: white;
   line-height: 1.1;
-  margin: 10px 0;
+  margin: 15px 0;
+  text-align: center;
+  margin-bottom: clamp(40px, 5vw, 65px);
 }
 
 .header_button {
+  font-size: 20px;
+  color: white;
+  line-height: 1.1;
+  font-weight: 700;
   background-color: #3aadc7;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 8px;
+  padding: 12px 15px;
   border: none;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .header_images {
@@ -94,6 +101,10 @@
   .header_content {
     align-items: flex-start;
     width: unset;
+  }
+  .header_name,
+  .header_subtext {
+    text-align: left;
   }
   .header_break {
     display: block;

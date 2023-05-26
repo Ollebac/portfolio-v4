@@ -44,11 +44,15 @@
 }
 
 .lang_text_container {
+  font-size: 20px;
+  color: white;
+  line-height: 1.1;
+  font-weight: 700;
   background-color: rgba(19, 26, 36, 0.7058823529);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 8px;
+  padding: 8px 15px;
   border: none;
   border-radius: 5px;
   font-size: 16px;

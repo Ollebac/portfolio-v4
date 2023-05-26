@@ -9,7 +9,7 @@ const Header = () => {
           Cabello
         </h1>
         <h2 className='header_subtext'>
-          Front-End Web <br className='header_break' />
+          Front-End Web <br />
           Developer
         </h2>
         <button className='header_button'>SEE MY WORK &#9816;</button>

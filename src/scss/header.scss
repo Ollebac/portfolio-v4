@@ -17,11 +17,14 @@
 .header_name {
   @include font($size: var.$title_name);
   @include vertical_space;
+  text-align: center;
 }
 
 .header_subtext {
   @include font($size: var.$title_subtext);
   @include vertical_space;
+  text-align: center;
+  margin-bottom: clamp(40px, 5vw, 65px);
 }
 
 .header_button {
@@ -81,6 +84,11 @@
   .header_content {
     align-items: flex-start;
     width: unset;
+  }
+
+  .header_name,
+  .header_subtext {
+    text-align: left;
   }
 
   .header_break {

@@ -14,11 +14,13 @@
 }
 
 @mixin button($bg: var.$bg_aqua) {
+  @include font($size: var.$general_text);
+  font-weight: 700;
   background-color: $bg;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 8px;
+  padding: 12px 15px;
   border: none;
   border-radius: 5px;
 }
