@@ -12,9 +12,9 @@ type ProjectObject = {
 const projectArray: Array<ProjectObject> = [
   {
     projectName: 'Portfolio v4',
-    projectLang: ['React', 'TypeScript', 'SCSS', 'Figma'],
+    projectLang: ['React', 'TypeScript', 'SCSS', 'Figma', 'EmailJS'],
     projectDesc:
-      'My third iteration of my personal website built with Next.js, Javascript, and CSS, hosted on Vercel. I personally designed and styled this site in Figma after researching UI design through articles, videos, and observation. I Project details in short description and such.',
+      'My fourth iteration of my portfolio website built with React, TypeScript, and SCSS, hosted on Vercel. Design was done in Figma and iamges were commissioned from various artists. The application makes use of EmailJS to send client side emails via the contact form.',
     projectGit: 'https://github.com/Ollebac/portfolio-v4',
     projectWeb: 'https://ollebac.dev',
   },
@@ -30,7 +30,7 @@ const projectArray: Array<ProjectObject> = [
     projectName: 'Portfolio v3',
     projectLang: ['Next.js', 'Javascript', 'CSS', 'Figma'],
     projectDesc:
-      'My third iteration of my personal website built with Next.js, Javascript, and CSS, hosted on Vercel. I personally designed and styled this site in Figma after researching UI design through articles, videos, and observation. I Project details in short description and such.',
+      'My third iteration of my personal website built with Next.js, Javascript, and CSS, hosted on Vercel. I personally designed and styled this site in Figma after researching UI design through articles, videos, and observation.',
     projectGit: 'https://github.com/Ollebac/portfolio-v4',
     projectWeb: '',
   },

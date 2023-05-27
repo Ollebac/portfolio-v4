@@ -26,7 +26,7 @@
 }
 
 .project_title {
-  @include font($color: var.$bg_dark_blue, $size: var.$section_header);
+  @include font($color: var.$bg_blue2, $size: var.$section_header);
   @include vertical_space();
 }
 
@@ -43,7 +43,7 @@
 }
 
 .project_description {
-  @include font($size: var.$small_text, $color: var.$bg_dark_blue);
+  @include font($size: var.$small_text, $color: var.$bg_blue2);
   @include vertical_space();
   line-height: 1.5;
 }

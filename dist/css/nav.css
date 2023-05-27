@@ -15,12 +15,12 @@
 }
 
 .nav_item {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   padding: 5px;
 }
 .nav_item:hover:hover {
   transform: scale(1.2);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 @media screen and (min-width: 750px) {

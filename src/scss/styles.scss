@@ -3,8 +3,6 @@
 
 .page_container {
   position: relative;
-  max-width: 1500px;
-  margin: auto;
 }
 
 .angled_background {
@@ -13,7 +11,7 @@
   width: 100%;
   top: 0;
   right: 0;
-  background-color: var.$bg_dark_blue;
+  background-color: var.$bg_blue1;
   z-index: -1;
   clip-path: polygon(100% 100px, 100% 70%, 0 95%, 0% 25%);
 }

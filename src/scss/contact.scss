@@ -13,6 +13,7 @@
   width: 100%;
   max-width: 600px;
   overflow: hidden;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
 .contact_form_left {
@@ -29,7 +30,7 @@
 .contact_line_break {
   width: 150px;
   height: 2px;
-  background-color: var.$bg_dark_blue;
+  background-color: var.$bg_blue2;
   margin: 15px 0;
 }
 
@@ -43,7 +44,7 @@
   @include flex($direction: column);
   border-radius: 0 15px 15px 0;
   align-items: flex-start;
-  background-color: var.$bg_light_blue;
+  background-color: var.$bg_form;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;

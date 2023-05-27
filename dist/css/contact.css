@@ -13,6 +13,7 @@
   width: 100%;
   max-width: 600px;
   overflow: hidden;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
 .contact_form_left {
@@ -50,7 +51,7 @@
   align-items: center;
   border-radius: 0 15px 15px 0;
   align-items: flex-start;
-  background-color: #222a36;
+  background-color: #1a222e;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
