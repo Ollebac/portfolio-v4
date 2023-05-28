@@ -21,6 +21,10 @@ ul {
   list-style: none;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .page_container {
   position: relative;
 }

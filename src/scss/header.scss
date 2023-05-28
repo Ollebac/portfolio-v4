@@ -23,6 +23,7 @@
 .header_subtext {
   @include font($size: var.$title_subtext);
   @include vertical_space;
+  font-family: Poppins, Arial;
   text-align: center;
   margin-bottom: clamp(40px, 5vw, 65px);
 }
@@ -40,6 +41,7 @@
 
 .header_images {
   @include flex();
+  justify-content: flex-end;
   margin-top: 40px;
 }
 
@@ -80,11 +82,13 @@
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
+  .header_container {
+    justify-content: space-between;
+  }
   .header_img_bg2 {
     display: block;
     transform: translateY(-80px);
-    transition: 5s;
   }
 
   .header_content {
@@ -109,7 +113,14 @@
 @media screen and (min-width: 1500px) {
   .header_img_bg3 {
     display: block;
-    transition: 5s;
+  }
+
+  .header_img {
+    width: 270px;
+  }
+
+  .header_img_bg {
+    height: 500px;
   }
 }
 

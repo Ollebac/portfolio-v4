@@ -18,7 +18,7 @@
 }
 
 .header_name {
-  font-size: clamp(55px, 8vw, 96px);
+  font-size: 95px;
   color: white;
   line-height: 1.1;
   margin: 15px 0;
@@ -26,16 +26,17 @@
 }
 
 .header_subtext {
-  font-size: clamp(30px, 3vw, 26px);
+  font-size: 26px;
   color: white;
   line-height: 1.1;
   margin: 15px 0;
+  font-family: Poppins, Arial;
   text-align: center;
   margin-bottom: clamp(40px, 5vw, 65px);
 }
 
 .header_button {
-  font-size: 20px;
+  font-size: 26px;
   color: white;
   line-height: 1.1;
   font-weight: 700;
@@ -43,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 15px;
+  padding: 20px 25px;
   border: none;
   border-radius: 5px;
   margin: 15px 0;
@@ -60,6 +61,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: flex-end;
   margin-top: 40px;
 }
 
@@ -98,11 +100,13 @@
     width: 50%;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
+  .header_container {
+    justify-content: space-between;
+  }
   .header_img_bg2 {
     display: block;
     transform: translateY(-80px);
-    transition: 5s;
   }
   .header_content {
     align-items: flex-start;
@@ -122,7 +126,12 @@
 @media screen and (min-width: 1500px) {
   .header_img_bg3 {
     display: block;
-    transition: 5s;
+  }
+  .header_img {
+    width: 270px;
+  }
+  .header_img_bg {
+    height: 500px;
   }
 }
 @media screen and (min-width: 1500px) {

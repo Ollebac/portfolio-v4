@@ -9,13 +9,11 @@ const Contact = () => {
 
   const [contactName, setContactName] = useState<string>('');
   const [contactEmail, setContactEmail] = useState<string>('');
-  const [contactSubject, setContactSubject] = useState<string>('');
   const [contactMessage, setContactMessage] = useState<string>('');
 
   const resetForm = () => {
     setContactName('');
     setContactEmail('');
-    setContactSubject('');
     setContactMessage('');
   };
 
@@ -73,31 +71,20 @@ const Contact = () => {
             />
           </div>
           <div className='form_line'>
-            <label className='contact_label'>Message Subject</label>
-            <input
-              type='text'
-              name='subject'
-              className='contact_form_input'
-              placeholder='Message Subject'
-              required={true}
-              value={contactSubject}
-              onChange={(e) => setContactSubject(e.target.value)}
-            />
-          </div>
-          <div className='form_line'>
             <label className='contact_label'>Message</label>
             <textarea
               name='message'
               className='contact_form_input'
               placeholder='Tell me what you have to say!'
               required={true}
+              rows={4}
               value={contactMessage}
               onChange={(e) => setContactMessage(e.target.value)}
             />
           </div>
           {/* <ReCAPTCHA sitekey='6LfXIElmAAAAAKXraSAzlqJBo9jfAPAl7JhKFKL3' className='recaptcha' /> */}
           <button className='form_button' type='submit' value='Send'>
-            Submit!
+            Submit
           </button>
         </form>
       </div>

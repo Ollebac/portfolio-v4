@@ -10,17 +10,16 @@
 @mixin font($size: var.$general_text, $color: white) {
   font-size: $size;
   color: $color;
-  line-height: 1.1;
 }
 
 @mixin button($bg: var.$bg_aqua) {
-  @include font($size: var.$general_text);
+  @include font($size: var.$title_subtext);
   font-weight: 700;
   background-color: $bg;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 15px;
+  padding: 20px 25px;
   border: none;
   border-radius: 5px;
 }
@@ -29,9 +28,9 @@
   border-radius: 15px;
 }
 
-@mixin enlarge() {
+@mixin enlarge($num: 1.2) {
   &:hover {
-    transform: scale(1.2);
+    transform: scale($num);
     transition-duration: 0.5s;
   }
 }
@@ -66,7 +65,7 @@
 @mixin section_header_desktop() {
   border: none;
   align-self: flex-start;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
 }
 

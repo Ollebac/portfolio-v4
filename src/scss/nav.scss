@@ -13,6 +13,8 @@
 
 .nav_item {
   @include reduce();
+  @include font();
+  font-weight: bold;
   padding: 5px;
 
   &:hover {

@@ -22,7 +22,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <img src='images/my_animals.png' alt='My pets' className='about_img' height={600} />
+      <div className='about_img_container'>
+        <img src='images/my_animals_circle.png' alt='My pets' className='about_img' height={600} />
+      </div>
     </div>
   );
 };

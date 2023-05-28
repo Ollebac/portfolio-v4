@@ -59,24 +59,26 @@ const Project: FC<{ project: ProjectObject; activeProject: number; index: number
 }) => {
   return (
     <div className={` ${activeProject === index ? 'project_left_inner_container' : 'inactive'}`}>
-      <h3 className='project_title'>{project.projectName}</h3>
-      <div className='lang_container'>
-        {project.projectLang.map((lang, index) => (
-          <div className='lang_text_container'>
-            <p>{lang}</p>
-          </div>
-        ))}
+      <div className='project_content'>
+        <h3 className='project_title'>{project.projectName}</h3>
+        <div className='lang_container'>
+          {project.projectLang.map((lang, index) => (
+            <div className='lang_text_container'>
+              <p>{lang}</p>
+            </div>
+          ))}
+        </div>
+        <p className='project_description'>{project.projectDesc}</p>
       </div>
-      <p className='project_description'>{project.projectDesc}</p>
       <div className='project_links_container'>
         {project.projectGit && (
           <a href={project.projectGit} target='blank'>
-            <img src='images/github_logo.png' alt='Github Link' className='project_link' height={50} width={50} />
+            <img src='images/github_logo.png' alt='Github Link' className='project_link1' height={50} width={50} />
           </a>
         )}
         {project.projectWeb && (
           <a href={project.projectWeb} target='blank'>
-            <img src='images/web_logo.png' alt='Web Link' className='project_link' height={50} width={50} />
+            <img src='images/web_logo2.png' alt='Web Link' className='project_link2' height={50} width={50} />
           </a>
         )}
       </div>
@@ -96,7 +98,7 @@ const Projects = () => {
         <div className='project_selector_container'>
           {projectArray.map((project, index) => (
             <div
-              className={`${activeProject === index ? 'project_selector active_project_selector' : 'project_selector'}`}
+              className={`${activeProject === index ? 'active_project_selector' : 'project_selector'}`}
               onClick={() => {
                 setActiveProject(index);
               }}

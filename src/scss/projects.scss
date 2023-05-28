@@ -7,9 +7,8 @@
 }
 
 .project_left_outer_container {
-  display: grid;
-  grid-template-rows: 400px 50px;
-  max-width: 500px;
+  @include flex($direction: column);
+  max-width: 550px;
   background-color: var.$bg_aqua;
   padding: clamp(30px, 5vw, 40px) clamp(15px, 4vw, 28px);
   @include round_border();
@@ -17,8 +16,15 @@
 
 .project_left_inner_container {
   @include flex($direction: column);
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
+  height: 500px;
+}
+
+.project_content {
+  @include flex($direction: column);
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .inactive {
@@ -43,18 +49,23 @@
 }
 
 .project_description {
-  @include font($size: var.$small_text, $color: var.$bg_blue2);
+  @include font($size: var.$general_text, $color: var.$bg_blue2);
   @include vertical_space();
-  line-height: 1.5;
 }
 
 .project_links_container {
   @include vertical_space();
+  justify-self: flex-end;
 }
 
-.project_link {
-  margin: 0 10px;
+.project_link1 {
   filter: invert(1);
+}
+
+.project_link1,
+.project_link2 {
+  @include enlarge();
+  margin: 0 10px 0 0;
 }
 
 .project_selector_container {
@@ -62,19 +73,26 @@
   margin: 30px auto 0;
 }
 
-.project_selector {
+.project_selector,
+.active_project_selector {
   line-height: 1px;
   padding: 8px 8px;
   border-radius: 50%;
   margin: 10px;
-  background-color: var.$bg_purple;
   cursor: pointer;
+}
+
+.project_selector {
+  background-color: var.$bg_purple;
+
+  &:hover {
+    @include enlarge(1.5);
+  }
 }
 
 .active_project_selector {
   background-color: white;
-  opacity: 80%;
-  transform: scale(1.3);
+  transform: scale(1.5);
 }
 
 .project_right_container {
@@ -89,7 +107,6 @@
 .project_section_overview {
   @include font($size: var.$general_text);
   @include vertical_space();
-  line-height: 1.4;
 }
 
 @media screen and (min-width: 800px) {
@@ -110,14 +127,19 @@
   .projects_section_container {
     @include section_spacer_desktop;
     display: grid;
-    grid-template-columns: 500px 425px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 75px;
+  }
+
+  .project_left_outer_container {
+    height: 88%;
   }
 
   .project_right_container {
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: 600px;
     height: 100%;
     margin: 0;
   }
