@@ -9,6 +9,10 @@ const Header = () => {
           Cabello
         </h1>
         <h2 className='header_subtext'>Front-End Web Developer</h2>
+        <div className='header_circle'></div>
+        <p className='header_description'>
+          Firefighter, Animal Rescue, and Web Developer, I pride myself on writing consistent, high-quality code.
+        </p>
         <a href='#projects'>
           <button className='header_button'>SEE MY WORK &#9816;</button>
         </a>

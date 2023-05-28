@@ -8,6 +8,7 @@
 
 .header_content {
   @include flex($direction: column);
+  position: relative;
 }
 
 .header_break {
@@ -16,21 +17,29 @@
 
 .header_name {
   @include font($size: var.$title_name);
-  @include vertical_space;
   text-align: center;
+  margin-bottom: -10px;
+  line-height: 1;
 }
 
 .header_subtext {
   @include font($size: var.$title_subtext);
-  @include vertical_space;
   font-family: Poppins, Arial;
   text-align: center;
+  opacity: 0.5;
+}
+
+.header_description {
+  @include vertical_space();
   margin-bottom: clamp(40px, 5vw, 65px);
+  opacity: 0.9;
+  max-width: 450px;
+  text-align: center;
 }
 
 .header_button {
   @include button();
-  @include vertical_space;
+  @include vertical_space();
   @include reduce();
   cursor: pointer;
 
@@ -80,6 +89,51 @@
   .header_images {
     width: 50%;
   }
+
+  .header_content {
+    align-items: flex-start;
+  }
+
+  .header_break {
+    display: block;
+  }
+
+  .header_name,
+  .header_subtext {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .header_subtext {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    line-height: 1.4;
+    width: 220px;
+    opacity: 0.75;
+  }
+
+  .header_circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: -80px;
+    left: 73px;
+    background-color: #3aadc7;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .header_description {
+    text-align: left;
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .header_description {
+    max-width: 380px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -94,15 +148,6 @@
   .header_content {
     align-items: flex-start;
     width: unset;
-  }
-
-  .header_name,
-  .header_subtext {
-    text-align: left;
-  }
-
-  .header_break {
-    display: block;
   }
 
   .header_images {
