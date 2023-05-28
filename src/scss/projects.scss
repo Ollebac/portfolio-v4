@@ -19,6 +19,10 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 500px;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
 }
 
 .project_content {
@@ -56,10 +60,6 @@
 .project_links_container {
   @include vertical_space();
   justify-self: flex-end;
-}
-
-.project_link1 {
-  filter: invert(1);
 }
 
 .project_link1,
@@ -158,5 +158,14 @@
 
   .project_section_overview:nth-child(1) {
     margin-right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

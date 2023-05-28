@@ -73,12 +73,12 @@ const Project: FC<{ project: ProjectObject; activeProject: number; index: number
       <div className='project_links_container'>
         {project.projectGit && (
           <a href={project.projectGit} target='blank'>
-            <img src='images/github_logo.png' alt='Github Link' className='project_link1' height={50} width={50} />
+            <img src='images/icon_github.png' alt='Github Link' className='project_link1' height={50} width={50} />
           </a>
         )}
         {project.projectWeb && (
           <a href={project.projectWeb} target='blank'>
-            <img src='images/web_logo2.png' alt='Web Link' className='project_link2' height={50} width={50} />
+            <img src='images/icon_web.png' alt='Web Link' className='project_link2' height={50} width={50} />
           </a>
         )}
       </div>
