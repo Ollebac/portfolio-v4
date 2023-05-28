@@ -9,7 +9,7 @@ const Header = () => {
           Cabello
         </h1>
         <h2 className='header_subtext'>Front-End Web Developer</h2>
-        <a href='#contact'>
+        <a href='#projects'>
           <button className='header_button'>SEE MY WORK &#9816;</button>
         </a>
       </header>
