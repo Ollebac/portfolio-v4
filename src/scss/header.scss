@@ -100,7 +100,7 @@
 
   .header_name,
   .header_subtext {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: left;
   }
 
@@ -118,10 +118,11 @@
     width: 220px;
     height: 220px;
     top: -80px;
-    left: 73px;
+    left: 88px;
     background-color: #3aadc7;
     border-radius: 50%;
     z-index: -1;
+    box-shadow: -120px 50px var.$bg_purple;
   }
 
   .header_description {
