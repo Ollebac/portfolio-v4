@@ -1,6 +1,8 @@
 body {
   width: 100%;
   background-color: #131a24;
+  font-family: Poppins, Arial;
+  min-height: 100vh;
 }
 
 .main_content {
@@ -23,6 +25,15 @@ ul {
 
 p {
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", Arial;
 }
 
 .page_container {

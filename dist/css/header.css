@@ -20,7 +20,6 @@
 .header_name {
   font-size: 95px;
   color: white;
-  line-height: 1.1;
   margin: 15px 0;
   text-align: center;
 }
@@ -28,7 +27,6 @@
 .header_subtext {
   font-size: 26px;
   color: white;
-  line-height: 1.1;
   margin: 15px 0;
   font-family: Poppins, Arial;
   text-align: center;
@@ -38,7 +36,6 @@
 .header_button {
   font-size: 26px;
   color: white;
-  line-height: 1.1;
   font-weight: 700;
   background-color: #3aadc7;
   display: flex;
