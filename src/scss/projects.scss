@@ -8,17 +8,18 @@
 
 .project_left_outer_container {
   @include flex($direction: column);
-  max-width: 550px;
+  @include round_border();
+  height: 650px;
+  box-sizing: content-box;
+  max-width: clamp(330px, 100vw, 550px);
   background-color: var.$bg_aqua;
   padding: clamp(30px, 5vw, 40px) clamp(15px, 4vw, 28px);
-  @include round_border();
 }
 
 .project_left_inner_container {
   @include flex($direction: column);
   justify-content: space-between;
   align-items: flex-start;
-  height: 500px;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -43,12 +44,13 @@
 .lang_container {
   @include flex();
   @include vertical_space();
+  flex-wrap: wrap;
 }
 
 .lang_text_container {
   @include button($bg: var.$bg_dark_blue_opacity);
   @include font($size: var.$small_text);
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
   padding: 10px;
 }
 
@@ -70,7 +72,7 @@
 
 .project_selector_container {
   @include flex();
-  margin: 30px auto 0;
+  margin: 30px auto;
 }
 
 .project_selector,
@@ -107,6 +109,12 @@
 .project_section_overview {
   @include font($size: var.$general_text);
   @include vertical_space();
+}
+
+@media screen and (min-width: 550px) {
+  .project_left_outer_container {
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 800px) {
