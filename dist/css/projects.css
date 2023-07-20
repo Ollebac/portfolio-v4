@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  height: 650px;
+  justify-content: space-between;
   box-sizing: content-box;
   max-width: clamp(330px, 100vw, 550px);
   background-color: #3aadc7;
@@ -103,7 +103,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 
 .project_selector,
@@ -155,7 +155,7 @@
 
 @media screen and (min-width: 550px) {
   .project_left_outer_container {
-    height: 500px;
+    height: 550px;
   }
 }
 @media screen and (min-width: 800px) {
