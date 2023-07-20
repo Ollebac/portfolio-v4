@@ -19,6 +19,14 @@ const projectArray: Array<ProjectObject> = [
     projectWeb: 'https://ollebac.dev',
   },
   {
+    projectName: 'Hopatcong Animal Shelter',
+    projectLang: ['NextJS', 'TypeScript', 'SCSS', 'Figma'],
+    projectDesc:
+      'Being an animal control officer and consistently volunteering at the shelter, I noticed the official borough site was not very user friendly. I took it upon myself to create a more user friendly site so the public can learn about the shelter and access necessary adoption applications. ',
+    projectGit: 'https://github.com/Ollebac/hopatcong-animal-shelter',
+    projectWeb: 'https://hopatconganimalshelter.com',
+  },
+  {
     projectName: 'Equestrian Webpage',
     projectLang: ['React', 'TypeScript', 'SCSS', 'Figma'],
     projectDesc:
