@@ -11,20 +11,20 @@ type ProjectObject = {
 
 const projectArray: Array<ProjectObject> = [
   {
-    projectName: 'Portfolio v4',
-    projectLang: ['React', 'TypeScript', 'SCSS', 'Figma', 'EmailJS'],
-    projectDesc:
-      'My fourth iteration of my portfolio website built with React, TypeScript, and SCSS, hosted on Vercel. Design was done in Figma and iamges were commissioned from various artists. The application makes use of EmailJS to send client side emails via the contact form.',
-    projectGit: 'https://github.com/Ollebac/portfolio-v4',
-    projectWeb: 'https://ollebac.dev',
-  },
-  {
     projectName: 'Hopatcong Animal Shelter',
     projectLang: ['NextJS', 'TypeScript', 'SCSS', 'Figma'],
     projectDesc:
       'Being an animal control officer and consistently volunteering at the shelter, I noticed the official borough site was not very user friendly. I took it upon myself to create a more user friendly site so the public can learn about the shelter and access necessary adoption applications. ',
     projectGit: 'https://github.com/Ollebac/hopatcong-animal-shelter',
     projectWeb: 'https://hopatconganimalshelter.com',
+  },
+  {
+    projectName: 'Portfolio v4',
+    projectLang: ['React', 'TypeScript', 'SCSS', 'Figma', 'EmailJS'],
+    projectDesc:
+      'My fourth iteration of my portfolio website built with React, TypeScript, and SCSS, hosted on Vercel. Design was done in Figma and iamges were commissioned from various artists. The application makes use of EmailJS to send client side emails via the contact form.',
+    projectGit: 'https://github.com/Ollebac/portfolio-v4',
+    projectWeb: 'https://ollebac.dev',
   },
   {
     projectName: 'Equestrian Webpage',
